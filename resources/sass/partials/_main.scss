@@ -1,14 +1,42 @@
-.cards {
+
+  .cards {
     display: flex;
     flex-wrap: wrap;
     .card {
-      width: calc(100% / 3) - 20px;
-      margin: 10px;
+  
+      width: calc((100% / 3) - 10px);
+      margin: 5px;
       img {
         display: block;
         width: 100%;
         height: auto;
       }
+      
+      @media screen and (max-width: 768px) {
+        width: calc(( 100% / 2) - 10px);
+      }
+      @media screen and (max-width: 480px) {
+        width: calc( 100%  - 10px);
+      }
+  
     }
   }
+  
+  .container-main {
+    padding: 40px 0;
+    background-color:mistyrose;
+  }
+
+  .product {
+    
+    padding: 40px 0;
+    img {
+      width: 100%;
+    }
+    h1{
+      text-align: center;
+    }
+  }
+  
+  
   

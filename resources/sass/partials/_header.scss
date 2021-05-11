@@ -7,8 +7,31 @@
       }
   }
   
+  .hamb-menu { 
+    a {
+      color: $brand_color;
+    }
+    text-align: center;
+    font-size: 30px;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
+
+  }
   .main-nav {
+
     ul {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+  
       display: flex;
       list-style: none;
       justify-content: center;
@@ -17,6 +40,8 @@
         text-decoration: none;
         font-size: 22px;
         padding: 15px;
+        display: inline-block;
+
       }
       li {
         &.active {

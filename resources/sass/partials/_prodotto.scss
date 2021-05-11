@@ -1,0 +1,27 @@
+.container-prodotto {
+    position: relative;
+    background-color: $prodotto_colour;
+    p{
+        color: $brand_color;
+    }
+}
+
+.arrow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-arrow, .right-arrow{
+        
+        background-color: #dcedf2 ;
+        font-size: 20px;
+        padding: 10px;
+        a{
+            color: #ffffff;
+        }
+    }
+}

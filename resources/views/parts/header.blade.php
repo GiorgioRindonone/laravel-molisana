@@ -1,14 +1,14 @@
 <header>
   <div class="container">
     <div class="logo">
-      <img src="{{ asset('images/url/nellaCartellaPublic.png') }}" alt="">
+      <img src="{{ asset('../../img/marchio-sito-test.png') }}" alt="">
     </div>
     <nav class="main-nav">
+      <div class="hamb-menu"><a href=""><i class="fas fa-bars"></i></a></div>
       <ul>
-        <li class="active"><a href="#"></a>home</li>
-        <li><a href="#"></a>prodotti</li>
-        <li><a href="#"></a>news</li>
-
+        <li class="{{  Route::getCurrentRoute()->getName() == 'homepage' ? 'active' : '' }}"><a href="{{route('homepage')}}">Home</a></li>
+        <li class="{{  Route::getCurrentRoute()->getName() == 'prodotto' ? 'active' : '' }}"><a href="{{route('prodotto', ['id' => 0])}}">Prodotti</a></li>
+        <li class="{{  Route::getCurrentRoute()->getName() == 'news' ? 'active' : '' }}"><a href="{{route('news', ['id' => 0])}}">News</a></li>
       </ul>
     </nav>
   </div>
