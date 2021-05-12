@@ -2,7 +2,9 @@
 
     color: $text_color;
 
-    background-color: white;
+    background-image: url("../img/footer-montagne-bottom.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
 
     .column {
         ul {

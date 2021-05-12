@@ -1,7 +1,7 @@
 @extends('layout.main')
 
-@section('pagetitle')
-    Prodotti
+@section('pageTitle')
+    {{$pasta['titolo']}}
 @endsection
 
 @section('contentMain')

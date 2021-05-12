@@ -48,60 +48,29 @@
                         <h3>
                             Pastificio
                         </h3>
-                    <ul>            
+                    <ul>
+                        @foreach (config('products')['pastificio'] as $key => $item)
                         <li>
-                            <a href=""><p>Il Pastificio</p></a>
+                            <a href="{{$item['link']}}"><p>{{$item['voce']}}</p></a>
                         </li>
-                        <li>
-                            <a href=""><p>Grano decorato a pietra</p></a>
-                        </li>
-                        <li>
-                            <a href=""><p>Il molise c'è</p></a>
-                        </li>
-                        <li>
-                            <a href=""><p>fiera integrata</p></a>
-                        </li>
-                        <li>
-                            <a href=""><p>100 anni di pasta</p></a>
-                        </li>
-                        <li>
-                            <a href=""><p>Sartoria della pasta</p></a>
-                        </li>
-                        <li>
-                            <a href=""><p>Spaghetto Quadrato</p></a>
-                        </li>
-                        <li>
-                            <a href=""><p>Le Persone</p></a>
-                        </li>
-    
+                        @endforeach
+
                     </ul>
                     <h3>
                         Prodotti
                     </h3>
-                <ul>
-                    <li>
-                        <a href=""><p>Le Classiche</p></a>
-                    </li>
-                    <li>
-                        <a href=""><p>Le Integrali</p></a>
-                    </li>
-                    <li>
-                        <a href=""><p>Le Speciali</p></a>
-                    </li>
-                    <li>
-                        <a href=""><p>Le Biologiche</p></a>
-                    </li>
-                    <li>
-                        <a href=""><p>Le Gluten-Free</p></a>
-                    </li>
-                    <li>
-                        <a href=""><p>Le Semole</p></a>
-                    </li>
-                    <li>
-                        <a href=""><p>Le Extra di Lusso</p></a>
-                    </li>
+                {{-- dato che è un array associativo key contiene il nome della chiave altrimenti l'indice di iterazione --}}
+                    <ul>   
+                        @foreach (config('products')['prodotti'] as $key => $item)
+                        <li>
+                            <a href="{{$item['link']}}"><p>{{$item['voce']}}</p></a>
+                        </li>
+                        @endforeach
+                     
+                    </ul>
 
-                </ul>
+
+
 
         
                 </div>
@@ -110,21 +79,11 @@
                         Collezione da Chef
                     </h3>
                     <ul>
-                    <li>
-                        <a href=""><p>Collezione da Chef</p></a>
-                    </li>
-                    <li>
-                        <a href=""><p>Grandi Cucine</p></a>
-                    </li>
-
-                    <li>
-                        <a href=""><p>Biologiche</p></a>
-                    </li>
-
-                    <li>
-                        <a href=""><p>Quadrate</p></a>
-                    </li>
-
+                        @foreach (config('products')['collezioneChef'] as $key => $item)
+                        <li>
+                            <a href="{{$item['link']}}"><p>{{$item['voce']}}</p></a>
+                        </li>
+                        @endforeach
     
                     </ul>
         

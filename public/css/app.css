@@ -116,7 +116,7 @@ h1 {
 
 .container-main {
   padding: 40px 0;
-  background-color: mistyrose;
+  background-image: url("../img/fondo-pag-speciali.jpg");
 }
 
 .product {
@@ -131,7 +131,9 @@ h1 {
 
 .container-footer {
   color: #848d9b;
-  background-color: white;
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .container-footer .column {
   width: calc((100% / 3) - 10px);
